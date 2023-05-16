@@ -12,7 +12,7 @@
 
 ```html
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>🎨 Dibujitos</title>
     <style></style>
 </head>
@@ -118,7 +118,6 @@ Se define el tamaño y el color de fondo del elemento `svg` con id "lienzo".
    - La función `perseguir` se ejecuta cuando el mouse se mueve sobre el lienzo SVG. Si un círculo está seleccionado, la posición del círculo se actualiza con las coordenadas del mouse.
 ```js
         const perseguir = (suceso) => {
-            console.log(suceso)
             if (seleccionado) {
                 seleccionado.setAttribute('cx', suceso.offsetX)
                 seleccionado.setAttribute('cy', suceso.offsetY)
