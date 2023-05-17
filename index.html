@@ -1,18 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-MX">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>🎨 Dibujitos</title>
     <style>
         * {
             font-family: sans-serif;
-        }
-
-        svg#lienzo {
-            width: 100%;
-            height: 80%;
-            background-color: white;
         }
 
         body,
@@ -28,6 +22,12 @@
         svg#bases {
             display: none;
         }
+
+        svg#lienzo {
+            width: 100%;
+            height: 70%;
+            background-color: white;
+        }
     </style>
 </head>
 
@@ -41,7 +41,7 @@
     </svg>
     <svg id="lienzo" onmousemove="perseguir(event)"></svg>
     <script>
-        const lienzo = document.getElementById('lienzo');
+        const lienzo = document.getElementById('lienzo')
         let seleccionado = null
         const poncirc = () => {
             let circulo = document.getElementById('c').cloneNode()
@@ -59,7 +59,6 @@
                 seleccionado = null
         }
         const perseguir = (suceso) => {
-            console.log(suceso)
             if (seleccionado) {
                 seleccionado.setAttribute('cx', suceso.offsetX)
                 seleccionado.setAttribute('cy', suceso.offsetY)

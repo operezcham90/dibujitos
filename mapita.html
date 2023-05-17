@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <style>
+        #output-svg {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="file" id="file-input">
+    <svg id="output-svg"></svg>
+    <script>
+        document.getElementById('file-input')
+        .addEventListener('change', function (event) {
+            var file = event.target.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    var contents = e.target.result;
+                    var parser = new DOMParser();
+                    var doc = parser.parseFromString(contents, 'image/svg+xml');
+                    var paths = doc.getElementsByTagName('path');
+
+                    var outputSvg = document.getElementById('output-svg');
+                    outputSvg.innerHTML = '';
+
+                    for (var i = 0; i < paths.length; i++) {
+                        outputSvg.appendChild(paths[i].cloneNode(true));
+                    }
+                };
+
+                reader.readAsText(file);
+            }
+        });
+    </script>
+</body>
+
+</html>
