@@ -138,8 +138,7 @@ Aquí tienes el código actualizado que agrega un evento para enfatizar el eleme
         }
 
         .highlight {
-            fill: yellow;
-            stroke: red;
+            stroke: black;
         }
     </style>
 </head>
