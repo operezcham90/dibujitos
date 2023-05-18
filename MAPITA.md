@@ -60,13 +60,13 @@ HTML:
 CSS:
 ```css
 #output-svg {
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
 }
 
 #path-list {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 ```
 
