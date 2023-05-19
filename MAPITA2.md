@@ -106,7 +106,7 @@ const salida = document.getElementById('salida');
 
 Cuando se invoca la función `generarCodigo`, se muestra el código HTML completo del elemento "lienzo" como texto. Esto permite mostrar y obtener el código HTML del elemento SVG en el área de texto.
 
-````js
+```js
 function generarCodigo() {
     salida.innerHTML = lienzo.outerHTML;
 }
