@@ -147,3 +147,18 @@ function abrir(event) {
     }
 }
 ```
+Las funciones `resaltar` y `quitarResaltado` se utilizan para resaltar y quitar el resaltado de un elemento SVG. Estas funciones se utilizan para agregar o eliminar una clase CSS llamada 'enfasis' de un elemento SVG específico. Esto permite resaltar visualmente el elemento cuando se pasa el cursor del ratón por encima y quitar el resaltado cuando se deja de pasar el cursor del ratón por encima.
+
+```js
+function resaltar(event) {
+    const id = event.target.textContent;
+    const path = document.getElementById(id);
+    path.classList.add('enfasis');
+}
+
+function quitarResaltado(event) {
+    const id = event.target.textContent;
+    const path = document.getElementById(id);
+    path.classList.remove('enfasis');
+}
+```
