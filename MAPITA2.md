@@ -45,3 +45,80 @@ El código siguiente define un estilo con la clase `enfasis`. Aquí está la exp
     stroke-width: 5px;
 }
 ```
+
+## Cuerpo
+
+Este código representa un formulario interactivo en HTML.
+
+El siguiente es un elemento de entrada de tipo archivo que permite al usuario seleccionar un archivo de su dispositivo. Cuando se selecciona un archivo, se ejecutará la función "abrir".
+
+```html
+<input type="file" onchange="abrir(event)">
+```
+
+Los siguientes son elementos de entrada de tipo número. El valor inicial del campo es "400" y cuando se cambia el valor, se ejecuta la función "cambiarAlto".
+
+```html
+Alto:
+<input type="number" value="400" onchange="cambiarAlto(event)">
+```
+
+Los siguientes elementos de entrada de tipo número funcionan de manera similar al anterior, pero representan el ancho en lugar del alto.
+
+```html
+Ancho:
+<input type="number" value="600" onchange="cambiarAncho(event)">
+```
+
+Lo siguiente es un botón con un ícono. Cuando se hace clic en el botón, se ejecuta la función "generarCodigo".
+
+```html
+<button onclick="generarCodigo()">🔽</button>
+```
+
+Se continua con una sección que contiene un elemento SVG con el identificador "lienzo". El SVG tiene una altura de 400 píxeles y un ancho de 600 píxeles.
+
+```html
+<div><svg id="lienzo" height="400" width="600"></svg></div>
+```
+
+Luego, otra división para mostrar una lista de elementos.
+
+```html
+<div id="lista"></div>
+```
+
+Finalmente un área de texto donde se puede mostrar y editar texto.
+
+```html
+<textarea id="salida"></textarea>
+```
+
+## Rutinas
+
+Estas líneas de código utilizan JavaScript para seleccionar elementos del documento HTML utilizando sus identificadores y asignarlos a variables. Esto es para facilitar su manipulación y uso en el código posterior.
+
+```js
+const lienzo = document.getElementById('lienzo');
+const lista = document.getElementById('lista');
+const salida = document.getElementById('salida');
+```
+
+Cuando se invoca la función `generarCodigo`, se muestra el código HTML completo del elemento "lienzo" como texto. Esto permite mostrar y obtener el código HTML del elemento SVG en el área de texto.
+
+````js
+function generarCodigo() {
+    salida.innerHTML = lienzo.outerHTML;
+}
+```
+
+Cuando se llama a la función `generarColor`, devuelve un color aleatorio en formato RGB, lo cual puede ser utilizado para aplicar colores aleatorios a elementos en el código. Cada vez que se llama a esta función, se generará un nuevo color RGB aleatorio. Uno por uno se generan tres valores aleatorios para los componentes de color rojo, verde y azul (RGB) en el rango de 100 a 249.
+
+```js
+function generarColor() {
+    const r = Math.floor(Math.random() * 150) + 100;
+    const g = Math.floor(Math.random() * 150) + 100;
+    const b = Math.floor(Math.random() * 150) + 100;
+    return `rgb(${r},${g},${b})`;
+}
+```
