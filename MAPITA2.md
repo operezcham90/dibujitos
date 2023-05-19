@@ -174,13 +174,7 @@ function borrar(event) {
 }
 ```
 
-Esta función en JavaScript llamada "limpiarPantalla" borra el contenido de dos elementos en el documento HTML.
-
-El primer comando, "lienzo.innerHTML = '';", establece el contenido del elemento con el id "lienzo" como una cadena vacía, eliminando todo el contenido que pueda haber dentro de ese elemento.
-
-El segundo comando, "lista.innerHTML = '';", hace lo mismo pero con el elemento que tiene el id "lista".
-
-En resumen, esta función borra el contenido de los elementos "lienzo" y "lista" en la pantalla.
+La función `limpiarPantalla` borra el contenido de dos elementos en el documento HTML. Se borra el contenido de los elementos "lienzo" y "lista" en la pantalla.
 
 ```js
 function limpiarPantalla() {
