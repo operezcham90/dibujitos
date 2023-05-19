@@ -205,3 +205,16 @@ function dibujarFigura(figura) {
     lienzo.appendChild(copia);
 }
 ```
+
+La función `dibujarBoton` crea un nuevo elemento de botón, establece su contenido de texto y asigna funciones a varios eventos. Luego, agrega el botón al documento HTML en el lugar designado. El valor del parámetro `id` se asigna como el texto del botón. Cuando el cursor se coloca sobre el botón, se ejecutará la función `resaltar`. Cuando el cursor se mueve fuera del botón, se ejecutará la función `quitarResaltado`. Cuando se presione el botón, se ejecutará la función `borrar`.
+
+```js
+function dibujarBoton(id) {
+    const boton = document.createElement('button');
+    boton.textContent = id;
+    boton.onmouseover = resaltar;
+    boton.onmouseout = quitarResaltado;
+    boton.onclick = borrar;
+    lista.appendChild(boton);
+}
+```
