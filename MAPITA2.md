@@ -218,3 +218,18 @@ function dibujarBoton(id) {
     lista.appendChild(boton);
 }
 ```
+
+La función `procesarArchivo` se utiliza para procesar un archivo cargado por el usuario. Extrae las figuras del archivo utilizando la función `interpretarArchivo`, limpia la pantalla, y luego dibuja las figuras en un lienzo y crea botones asociados a cada figura en una lista. El bucle `for` itera sobre la colección de `figuras`. Para cada figura, se llama a la función `dibujarFigura`. Esto se hace para dibujar la figura en un lienzo. A continuación, se llama a la función `dibujarBoton` y se le pasa el `id` de la figura como argumento. Esto se hace para crear y agregar un botón asociado a la figura.
+
+```js
+function procesarArchivo(event) {
+    const texto = event.target.result;
+    const figuras = interpretarArchivo(texto);
+    limpiarPantalla()
+    for (let i = 0; i < figuras.length; i++) {
+        const figura = figuras[i]
+        dibujarFigura(figura)
+        dibujarBoton(figura.id)
+    }
+}
+```
