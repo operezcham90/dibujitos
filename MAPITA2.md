@@ -136,3 +136,14 @@ function cambiarAncho(event) {
 ```
 
 La función `abrir` se encarga de procesar un archivo seleccionado por el usuario y leer su contenido. Cuando el usuario selecciona un archivo, la función `abrir` crea un lector de archivos. Comienza a leer el contenido del archivo seleccionado como texto. Una vez que se completa la lectura del archivo, se llama a la función `procesarArchivo` para usar el contenido.
+
+```js
+function abrir(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = procesarArchivo;
+        reader.readAsText(file);
+    }
+}
+```
