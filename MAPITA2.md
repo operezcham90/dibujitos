@@ -122,3 +122,15 @@ function generarColor() {
     return `rgb(${r},${g},${b})`;
 }
 ```
+
+Las siguientes dos funciones, `cambiarAlto` y `cambiarAncho`, se encargan de cambiar dinámicamente la altura y el ancho. El tamaño del "lienzo" cambia en función de los valores en los elementos de entrada. Al cambiar los valores de alto y ancho, se ajustará el tamaño del elemento SVG en consecuencia.
+
+```js
+function cambiarAlto(event) {
+    lienzo.setAttribute('height', event.target.value);
+}
+
+function cambiarAncho(event) {
+    lienzo.setAttribute('width', event.target.value);
+}
+```
