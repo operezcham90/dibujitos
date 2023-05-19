@@ -194,3 +194,14 @@ function interpretarArchivo(texto) {
     return figuras;
 }
 ```
+
+La función `dibujarFigura` toma una figura, crea una copia de ella, elimina los estilos aplicados previamente, establece un nuevo color de relleno y luego agrega la copia al lienzo.
+
+```js
+function dibujarFigura(figura) {
+    const copia = figura.cloneNode(true);
+    copia.removeAttribute('style');
+    copia.setAttribute('fill', generarColor());
+    lienzo.appendChild(copia);
+}
+```
