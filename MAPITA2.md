@@ -162,3 +162,14 @@ function quitarResaltado(event) {
     path.classList.remove('enfasis');
 }
 ```
+
+La función `borrar` se utiliza para eliminar un elemento y su correspondiente botón de la lista cuando se produce un evento de clic en el botón. Esto implica eliminar el elemento SVG de la visualización y quitar el botón de la lista, logrando así la eliminación completa en la interfaz.
+
+```js
+function borrar(event) {
+    const id = event.target.textContent;
+    const path = document.getElementById(id);
+    lienzo.removeChild(path);
+    lista.removeChild(event.target);
+}
+```
