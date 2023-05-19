@@ -173,3 +173,30 @@ function borrar(event) {
     lista.removeChild(event.target);
 }
 ```
+
+La función `procesarArchivo` se utiliza para procesar el contenido de un archivo SVG cargado y mostrar sus elementos en el lienzo. Se analiza el contenido del archivo indicando que es un documento SVG. Se obtienen todos los elementos `path` del documento. Luego se itera sobre todos los elementos `path` obtenidos. Se establece el atributo `fill` de cada elemento con un color generado al azar. Se muestra cada elemento en el lienzo y se crea un nuevo botón para cada uno. Los botones permiten resaltar y quitar el resaltado de los elementos en el lienzo, así como también eliminarlos.
+
+```js
+function procesarArchivo(event) {
+    const contenido = event.target.result;
+    const interprete = new DOMParser();
+    const doc = interprete.parseFromString(contenido, 'image/svg+xml');
+    const paths = doc.getElementsByTagName('path');
+    lienzo.innerHTML = '';
+    lista.innerHTML = '';
+    for (let i = 0; i < paths.length; i++) {
+        const path = paths[i].cloneNode(true);
+        path.removeAttribute('style');
+        path.setAttribute('fill', generarColor());
+        lienzo.appendChild(path);
+
+        const button = document.createElement('button');
+        button.textContent = path.id;
+        button.onmouseover = resaltar;
+        button.onmouseout = quitarResaltado;
+        button.onclick = borrar;
+
+        lista.appendChild(button);
+    }
+}
+```
