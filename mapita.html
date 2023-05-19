@@ -1,46 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-MX">
 
 <head>
     <meta charset="utf-8">
-    <title>Document</title>
+    <title>Editar Mapa</title>
     <style>
-        #output-svg {
-            width: 100%;
-            height: 100%;
-            border: 1px solid black;
+        #lienzo {
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+        }
+
+        .enfasis {
+            stroke: black;
+            stroke-width: 5px;
         }
     </style>
 </head>
 
 <body>
-    <input type="file" id="file-input">
-    <svg id="output-svg"></svg>
+    <input type="file" onchange="abrir(event)">
+    Alto:
+    <input type="number" value="400" onchange="cambiarAlto(event)">
+    Ancho:
+    <input type="number" value="600" onchange="cambiarAncho(event)">
+    <button onclick="generarCodigo()">🔽</button>
+    <div><svg id="lienzo" height="400" width="600"></svg></div>
+    <div id="lista"></div>
+
+    <textarea id="salida"></textarea>
     <script>
-        document.getElementById('file-input')
-        .addEventListener('change', function (event) {
-            var file = event.target.files[0];
+        const lienzo = document.getElementById('lienzo');
+        const lista = document.getElementById('lista');
+        const salida = document.getElementById('salida');
 
+        function generarCodigo() {
+            salida.innerHTML = 'A';
+            salida.innerHTML = lienzo.outerHTML;
+        }
+
+        function generarColor() {
+            const r = Math.floor(Math.random() * 150) + 100;
+            const g = Math.floor(Math.random() * 150) + 100;
+            const b = Math.floor(Math.random() * 150) + 100;
+            return `rgb(${r},${g},${b})`;
+        }
+
+        function cambiarAlto(event) {
+            lienzo.setAttribute('height', event.target.value);
+        }
+
+        function cambiarAncho(event) {
+            lienzo.setAttribute('width', event.target.value);
+        }
+
+        function abrir(event) {
+            const file = event.target.files[0];
             if (file) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    var contents = e.target.result;
-                    var parser = new DOMParser();
-                    var doc = parser.parseFromString(contents, 'image/svg+xml');
-                    var paths = doc.getElementsByTagName('path');
-
-                    var outputSvg = document.getElementById('output-svg');
-                    outputSvg.innerHTML = '';
-
-                    for (var i = 0; i < paths.length; i++) {
-                        outputSvg.appendChild(paths[i].cloneNode(true));
-                    }
-                };
-
+                const reader = new FileReader();
+                reader.onload = procesarArchivo;
                 reader.readAsText(file);
             }
-        });
+        }
+
+        function resaltar(event) {
+            const id = event.target.textContent;
+            const path = document.getElementById(id);
+            path.classList.add('enfasis');
+        }
+
+        function quitarResaltado(event) {
+            const id = event.target.textContent;
+            const path = document.getElementById(id);
+            path.classList.remove('enfasis');
+        }
+
+        function borrar(event) {
+            const id = event.target.textContent;
+            const path = document.getElementById(id);
+            lienzo.removeChild(path);
+            lista.removeChild(event.target);
+        }
+
+        function procesarArchivo(event) {
+            const contenido = event.target.result;
+            const interprete = new DOMParser();
+            const doc = interprete.parseFromString(contenido, 'image/svg+xml');
+            const paths = doc.getElementsByTagName('path');
+            lienzo.innerHTML = '';
+            lista.innerHTML = '';
+            for (let i = 0; i < paths.length; i++) {
+                const path = paths[i].cloneNode(true);
+                path.removeAttribute('style');
+                path.setAttribute('fill', generarColor());
+                lienzo.appendChild(path);
+
+                const button = document.createElement('button');
+                button.textContent = path.id;
+                button.onmouseover = resaltar;
+                button.onmouseout = quitarResaltado;
+                button.onclick = borrar;
+
+                lista.appendChild(button);
+            }
+        }
     </script>
 </body>
 

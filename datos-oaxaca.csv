@@ -1,31 +1,31 @@
-,Distrito1​,Región,Municipios,Superficie (km²),Población (2010),Densidad de población (hab/km²)
-,Silacayoapam,Mixteca,19,1830.54,32 802,17.91
-,Huajuapan,Mixteca,28,3269.74,140 858,43.07
-,Coixtlahuaca,Mixteca,13,1666.19,9 621,5.77
-,Teotitlán,Cañada,25,2211.67,146 270,66.13
-,Cuicatlán,Cañada,20,2186.94,53 870,24.63
-,Tuxtepec,Papaloapan,14,5495.74,416 824,75.84
-,Choapan,Papaloapan,6,402254,48 368,45246
-,Juxtlahuaca,Mixteca,7,1848.48,73 109,39.55
-,Teposcolula,Mixteca,21,1546.57,32 735,21.16
-,Nochixtlán,Mixteca,32,2798.69,62 105,22.19
-,Etla,Valles Centrales,23,2220.96,135 791,61.14
-,Ixtlán,Sierra Norte,26,2885.54,37 753,45151
-,Villa Alta,Sierra Norte,25,1156.39,31 596,27.32
-,Mixe,Sierra Norte,17,4930.46,107 140,21.73
-,Putla,Sierra Sur,10,2626.56,90 426,34.42
-,Tlaxiaco,Mixteca,35,2710.87,114 761,42.33
-,Zaachila,Valles Centrales,6,568.90,48 463,85.18
-,Zimatlán,Valles Centrales,13,988.49,56 288,56.94
-,Centro,Valles Centrales,21,538.60,559 086,-314778
-,Tlacolula,Valles Centrales,25,3324.14,117 032,35.20
-,Jamiltepec,Costa,24,4293.23,184 266,42.92
-,Juquila,Costa,12,3538.54,150 493,42.52
-,Sola de Vega,Sierra Sur,16,3592.42,79 284,45099
-,Ejutla,Valles Centrales,13,980.99,44 296,45.14
-,Ocotlán,Valles Centrales,20,857.92,72 928,85.00
-,Miahuatlán,Sierra Sur,32,758214,127 433,32.05
-,Yautepec,Sierra Sur,12,4559.16,33 680,7.38
-,Tehuantepec,Istmo de Tehuantepec,19,6318.40,239 287,37.87
-,Juchitán,Istmo de Tehuantepec,22,14436.86,356 146,24.66
-,Pochutla,Costa,14,3773.29,199 251,52.80
+ID,Distrito​,Región,Municipios,Superficie (km²),Población (2010),Densidad de población (hab/km²)
+6323,Silacayoapam,Mixteca,19,1830.54,32 802,17.91
+6321,Huajuapan,Mixteca,28,3269.74,140 858,43.07
+6317,Coixtlahuaca,Mixteca,13,1666.19,9 621,5.77
+4951,Teotitlán,Cañada,25,2211.67,146 270,66.13
+6319,Cuicatlán,Cañada,20,2186.94,53 870,24.63
+6315,Tuxtepec,Papaloapan,14,5495.74,416 824,75.84
+6327,Choapan,Papaloapan,6,402254,48 368,45246
+6333,Juxtlahuaca,Mixteca,7,1848.48,73 109,39.55
+6325,Teposcolula,Mixteca,21,1546.57,32 735,21.16
+6341,Nochixtlán,Mixteca,32,2798.69,62 105,22.19
+6335,Etla,Valles Centrales,23,2220.96,135 791,61.14
+6331,Ixtlán,Sierra Norte,26,2885.54,37 753,45151
+6329,Villa Alta,Sierra Norte,25,1156.39,31 596,27.32
+6339,Mixe,Sierra Norte,17,4930.46,107 140,21.73
+6351,Putla,Sierra Sur,10,2626.56,90 426,34.42
+6345,Tlaxiaco,Mixteca,35,2710.87,114 761,42.33
+6343,Zaachila,Valles Centrales,6,568.90,48 463,85.18
+6349,Zimatlán,Valles Centrales,13,988.49,56 288,56.94
+6337,Centro,Valles Centrales,21,538.60,559 086,-314778
+6353,Tlacolula,Valles Centrales,25,3324.14,117 032,35.20
+6365,Jamiltepec,Costa,24,4293.23,184 266,42.92
+6369,Juquila,Costa,12,3538.54,150 493,42.52
+6359,Sola de Vega,Sierra Sur,16,3592.42,79 284,45099
+6355,Ejutla,Valles Centrales,13,980.99,44 296,45.14
+6347,Ocotlán,Valles Centrales,20,857.92,72 928,85.00
+6367,Miahuatlán,Sierra Sur,32,758214,127 433,32.05
+6363,Yautepec,Sierra Sur,12,4559.16,33 680,7.38
+6371,Tehuantepec,Istmo de Tehuantepec,19,6318.40,239 287,37.87
+6361,Juchitán,Istmo de Tehuantepec,22,14436.86,356 146,24.66
+6373,Pochutla,Costa,14,3773.29,199 251,52.80
