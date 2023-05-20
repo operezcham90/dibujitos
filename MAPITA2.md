@@ -8,13 +8,12 @@
 
 El proyecto Mapita consiste en una página HTML que permite cargar y editar un mapa SVG. A continuación se describen sus características principales:
 
-- La página HTML contiene diversos elementos, como campos de entrada, un botón, un contenedor SVG, una lista y un área de texto.
 - Al cargar un archivo SVG, se lee su contenido y se procesa.
 - Se extraen las figuras del mapa SVG analizado.
 - Se generan colores aleatorios para cada figura del mapa.
 - Se añaden botones para resaltar y borrar las figuras.
 - Los campos de entrada permiten modificar el tamaño (alto y ancho) del mapa.
-- Al hacer clic en el botón "generarCodigo", se muestra el código SVG actualizado en el área de texto.
+- Se muestra el código SVG actualizado en el área de texto.
 
 ## Estilos
 
