@@ -51,14 +51,14 @@ Se crea un elemento de entrada de tipo archivo que permite al usuario selecciona
 <input type="file" onchange="abrir(event)">
 ```
 
-Los siguientes son elementos de entrada de tipo número. El valor inicial del campo es "400" y cuando se cambia el valor, se ejecuta la función "cambiarAlto".
+Lo siguiente es un elemento de entrada de tipo número. El valor inicial del campo es "400" y cuando se cambia el valor, se ejecuta la función "cambiarAlto".
 
 ```html
 Alto:
 <input type="number" value="400" onchange="cambiarAlto(event)">
 ```
 
-Los siguientes elementos de entrada de tipo número funcionan de manera similar al anterior, pero representan el ancho en lugar del alto.
+Después, un elemento similar al anterior, pero representa el ancho en lugar del alto.
 
 ```html
 Ancho:
@@ -71,7 +71,7 @@ Lo siguiente es un botón con un ícono. Cuando se hace clic en el botón, se ej
 <button onclick="generarCodigo()">🔽</button>
 ```
 
-Se continua con una sección que contiene un elemento SVG con el identificador "lienzo". El SVG tiene una altura de 400 píxeles y un ancho de 600 píxeles.
+Se continua con una sección que contiene un elemento SVG con el identificador `lienzo`. Tiene una altura de 400 píxeles y un ancho de 600 píxeles.
 
 ```html
 <div><svg id="lienzo" height="400" width="600"></svg></div>
@@ -83,13 +83,13 @@ Luego, otra división para mostrar una lista de elementos.
 <div id="lista"></div>
 ```
 
-Finalmente un área de texto donde se puede mostrar y editar texto.
+Finalmente, un área de texto donde se puede mostrar y editar texto.
 
 ```html
 <textarea id="salida"></textarea>
 ```
 
-## Rutinas
+## Rutinas 🐾
 
 Estas líneas de código utilizan JavaScript para seleccionar elementos del documento HTML utilizando sus identificadores y asignarlos a variables. Esto es para facilitar su manipulación y uso en el código posterior.
 
