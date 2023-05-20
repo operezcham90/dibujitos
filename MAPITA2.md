@@ -31,10 +31,10 @@ Para el elemento con el identificador `lienzo`:
 }
 ```
 
-El código siguiente define un estilo con la clase `enfasis`. Aquí está la explicación de cada propiedad:
+El código siguiente define un estilo con la clase `enfasis`:
 
-- La primera línea establece el color del trazo en negro. El trazo se refiere al contorno o borde de un elemento gráfico, como una línea o un borde de forma.
-- La segunda línea establece el ancho del trazo en 5 píxeles. Esto significa que el trazo será más grueso que el valor predeterminado.
+- Se establece el color del trazo en negro. El trazo se refiere al contorno o borde de un elemento gráfico, como una línea o un borde de forma.
+- Se establece el ancho del trazo en 5 píxeles. Esto significa que el trazo será más grueso que el valor predeterminado.
 
 ```css
 .enfasis {
