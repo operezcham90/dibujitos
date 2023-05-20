@@ -178,7 +178,7 @@ function limpiarPantalla() {
 }
 ```
 
-La función `interpretarArchivo` toma un texto como entrada y lo interpreta como un archivo SVG. Luego, extrae todas las etiquetas "path" del archivo y devuelve una colección. Se usa el método "parseFromString" para analizar el contenido como un documento XML en formato SVG.
+La función `interpretarArchivo` toma un texto como entrada y lo interpreta como un archivo SVG. Luego, extrae todas las etiquetas figuras del archivo y devuelve una colección. Se usa un objeto interprete para analizar el contenido como un documento XML en formato SVG.
 
 ```js
 function interpretarArchivo(texto) {
