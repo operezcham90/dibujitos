@@ -15,13 +15,13 @@ El proyecto Mapita consiste en una página HTML que permite cargar y editar un m
 - Los campos de entrada permiten modificar el tamaño (alto y ancho) del mapa.
 - Se muestra el código SVG actualizado en el área de texto.
 
-## Estilos
+## Estilos 🎨
 
-El código proporcionado establece estilos de borde para el elemento con el identificador `lienzo`. Se utiliza CSS para aplicar estos estilos. A continuación se explica cada propiedad:
+Para el elemento con el identificador `lienzo`:
 
-- La primera línea establece el ancho del borde en 1 píxel, lo que resulta en un borde delgado.
-- La segunda línea establece el estilo del borde como "solid", lo que significa que el borde se muestra como una línea continua.
-- La tercera línea establece el color del borde como gris.
+- Se establece el ancho del borde en 1 píxel, lo que resulta en un borde delgado.
+- Se establece el estilo del borde como una línea continua.
+- Se establece el color del borde como gris.
 
 ```css
 #lienzo {
