@@ -51,7 +51,7 @@ Se crea un elemento de entrada de tipo archivo que permite al usuario selecciona
 <input type="file" onchange="abrir(event)">
 ```
 
-Lo siguiente es un elemento de entrada de tipo número. El valor inicial del campo es "400" y cuando se cambia el valor, se ejecuta la función "cambiarAlto".
+Lo siguiente es un elemento de entrada de tipo número. El valor inicial del campo es "400" y cuando se cambia el valor, se ejecuta la función `cambiarAlto`.
 
 ```html
 Alto:
@@ -65,7 +65,7 @@ Ancho:
 <input type="number" value="600" onchange="cambiarAncho(event)">
 ```
 
-Lo siguiente es un botón con un ícono. Cuando se hace clic en el botón, se ejecuta la función "generarCodigo".
+Lo siguiente es un botón con un ícono. Cuando se hace clic en el botón, se ejecuta la función `generarCodigo`.
 
 ```html
 <button onclick="generarCodigo()">🔽</button>
