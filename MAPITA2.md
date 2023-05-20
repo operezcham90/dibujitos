@@ -1,7 +1,7 @@
 # Archivos
 
 - [datos-oaxaca.csv](https://raw.githubusercontent.com/operezcham90/dibujitos/main/datos-oaxaca.csv): El archivo es un conjunto de datos estructurados en formato CSV (valores separados por comas) que representa información sobre los municipios de Oaxaca.
-- [oaxaca.svg](https://raw.githubusercontent.com/operezcham90/dibujitos/main/oaxaca.svg): El archivo es un dibujo vectorial que representa los municipios del estado de Oaxaca. El formato SVG (Scalable Vector Graphics) permite representar gráficos de forma escalable, lo que significa que se pueden ampliar o reducir sin perder calidad.
+- [oaxaca.svg](https://raw.githubusercontent.com/operezcham90/dibujitos/main/oaxaca.svg): El archivo es un dibujo vectorial que representa los municipios del estado de Oaxaca. El formato SVG permite representar gráficos de forma escalable, lo que significa que se pueden ampliar o reducir sin perder calidad.
 - [mapita.html](https://github.com/operezcham90/dibujitos/blob/main/mapita.html): Archivo HTML principal.
 
 # Proyecto Mapita 2
