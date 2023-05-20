@@ -43,11 +43,9 @@ El código siguiente define un estilo con la clase `enfasis`:
 }
 ```
 
-## Cuerpo
+## Cuerpo 🍖
 
-Este código representa un formulario interactivo en HTML.
-
-El siguiente es un elemento de entrada de tipo archivo que permite al usuario seleccionar un archivo de su dispositivo. Cuando se selecciona un archivo, se ejecutará la función `abrir`.
+Se crea un elemento de entrada de tipo archivo que permite al usuario seleccionar un archivo de su dispositivo. Cuando se selecciona un archivo, se ejecutará la función `abrir`.
 
 ```html
 <input type="file" onchange="abrir(event)">
