@@ -36,8 +36,8 @@ El código proporcionado establece estilos de borde para el elemento con el iden
 
 El código siguiente define un estilo con la clase `enfasis`. Aquí está la explicación de cada propiedad:
 
-- `stroke: black;`: Establece el color del trazo en negro. El trazo se refiere al contorno o borde de un elemento gráfico, como una línea o un borde de forma.
-- `stroke-width: 5px;`: Establece el ancho del trazo en 5 píxeles. Esto significa que el trazo será más grueso que el valor predeterminado.
+- La primera línea establece el color del trazo en negro. El trazo se refiere al contorno o borde de un elemento gráfico, como una línea o un borde de forma.
+- La segunda línea establece el ancho del trazo en 5 píxeles. Esto significa que el trazo será más grueso que el valor predeterminado.
 
 ```css
 .enfasis {
