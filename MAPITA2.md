@@ -22,9 +22,9 @@ Este código permite cargar un mapa SVG, realizar modificaciones en el tamaño y
 
 El código proporcionado establece estilos de borde para el elemento con el identificador `lienzo`. Se utiliza CSS para aplicar estos estilos. A continuación se explica cada propiedad:
 
-- `border-width: 1px;`: Establece el ancho del borde en 1 píxel, lo que resulta en un borde delgado.
-- `border-style: solid;`: Establece el estilo del borde como "solid", lo que significa que el borde se muestra como una línea continua.
-- `border-color: gray;`: Establece el color del borde como gris.
+- La primera línea establece el ancho del borde en 1 píxel, lo que resulta en un borde delgado.
+- La segunda línea establece el estilo del borde como "solid", lo que significa que el borde se muestra como una línea continua.
+- La tercera línea establece el color del borde como gris.
 
 ```css
 #lienzo {
