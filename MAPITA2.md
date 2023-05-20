@@ -4,19 +4,17 @@
 - [oaxaca.svg](https://raw.githubusercontent.com/operezcham90/dibujitos/main/oaxaca.svg): El archivo es un dibujo vectorial que representa los municipios del estado de Oaxaca. El formato SVG permite representar gráficos de forma escalable, lo que significa que se pueden ampliar o reducir sin perder calidad.
 - [mapita.html](https://github.com/operezcham90/dibujitos/blob/main/mapita.html): Archivo HTML principal.
 
-# Proyecto Mapita 2
+# Proyecto Mapita
 
-Este código es una página HTML que permite cargar y editar un mapa SVG. En general:
+El proyecto Mapita consiste en una página HTML que permite cargar y editar un mapa SVG. A continuación se describen sus características principales:
 
-- El cuerpo contiene elementos como campos de entrada, un botón, un contenedor SVG, una lista y un área de texto.
-- Cuando se carga un archivo SVG utilizando, se lee el contenido del archivo y se procesa.
-- El archivo SVG se analiza y se extraen las figuras del mapa.
-- Se generan colores aleatorios para cada figura.
-- Se agregan botones para resaltar y borrar las figuras.
-- Se pueden realizar cambios en el alto y ancho del mapa a través de los campos de entrada.
-- Al hacer clic en el botón "generarCodigo", se muestra el código SVG resultante en el área de texto.
-
-Este código permite cargar un mapa SVG, realizar modificaciones en el tamaño y los colores de los elementos del mapa, y generar el código SVG actualizado.
+- La página HTML contiene diversos elementos, como campos de entrada, un botón, un contenedor SVG, una lista y un área de texto.
+- Al cargar un archivo SVG, se lee su contenido y se procesa.
+- Se extraen las figuras del mapa SVG analizado.
+- Se generan colores aleatorios para cada figura del mapa.
+- Se añaden botones para resaltar y borrar las figuras.
+- Los campos de entrada permiten modificar el tamaño (alto y ancho) del mapa.
+- Al hacer clic en el botón "generarCodigo", se muestra el código SVG actualizado en el área de texto.
 
 ## Estilos
 
