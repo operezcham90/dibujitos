@@ -4,7 +4,7 @@
 - [oaxaca.svg](https://raw.githubusercontent.com/operezcham90/dibujitos/main/oaxaca.svg): El archivo es un dibujo vectorial que representa los municipios del estado de Oaxaca. El formato SVG permite representar gráficos de forma escalable, lo que significa que se pueden ampliar o reducir sin perder calidad.
 - [mapita.html](https://github.com/operezcham90/dibujitos/blob/main/mapita.html): Archivo HTML principal.
 
-# Proyecto Mapita 🗺
+# Proyecto Mapita 🌎
 
 El proyecto Mapita consiste en una página HTML que permite cargar y editar un mapa SVG. A continuación se describen sus características principales:
 
