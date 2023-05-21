@@ -6,7 +6,7 @@
 
 # Proyecto Mapita 🌎
 
-El proyecto Mapita consiste en una página HTML que permite cargar y editar un mapa SVG. A continuación se describen sus características principales:
+El proyecto Mapita consiste en una página HTML que permite cargar y editar un mapa SVG.
 
 - Al cargar un archivo SVG, se lee su contenido y se procesa.
 - Se extraen las figuras del mapa SVG analizado.
