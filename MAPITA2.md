@@ -71,7 +71,7 @@ Lo siguiente es un botón con un ícono. Cuando se hace clic en el botón, se ej
 <button onclick="generarCodigo()">🔽</button>
 ```
 
-Se continua con una sección que contiene un elemento SVG con el identificador `lienzo`. Tiene una altura de 400 píxeles y un ancho de 600 píxeles.
+Después, una sección que contiene un elemento SVG con el identificador `lienzo`. Tiene una altura de 400 píxeles y un ancho de 600 píxeles.
 
 ```html
 <div><svg id="lienzo" height="400" width="600"></svg></div>
