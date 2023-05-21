@@ -43,7 +43,7 @@ El código siguiente define un estilo con la clase `enfasis`:
 }
 ```
 
-## Cuerpo 🍖
+## Cuerpo 💀
 
 Se crea un elemento de entrada de tipo archivo que permite al usuario seleccionar un archivo de su dispositivo. Cuando se selecciona un archivo, se ejecutará la función `abrir`.
 
