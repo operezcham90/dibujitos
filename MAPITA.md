@@ -1,6 +1,6 @@
 # Abrir el archivo SVG
 
-Aquí tienes un ejemplo de código HTML, CSS y JS que te permitirá abrir un archivo SVG usando un `<input>` de tipo archivo, encontrar todos los elementos `<path>` y dibujarlos en otro SVG en pantalla:
+Un ejemplo de código HTML, CSS y JS que te permitirá abrir un archivo SVG usando un `<input>` de tipo archivo, encontrar todos los elementos `<path>` y dibujarlos en otro SVG en pantalla:
 
 HTML:
 ```html
